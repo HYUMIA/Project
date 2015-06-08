@@ -1,0 +1,149 @@
+/* This is CSS for index.php */
+
+@font-face{
+	font-family: nanum;
+	src: url(./font/NanumBarunGothicBold.ttf);
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+body{
+	font-family: nanum;
+	font-weight: bold;
+}
+#login{
+	padding: 5px;
+	margin-top: 15%;
+	border-radius: 20px;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #F0F0F0;
+	border: 2px solid black;
+}
+	#title{
+		text-align: center;
+		margin-top: 20px;
+	}
+	#login_form{
+		margin: 20px auto;
+		text-align: center;
+	}
+		.field{
+			display: inline-block;
+			font-size: 25px;
+			text-align: left;
+			margin-top: 10px;
+			
+		}
+			.field input{
+				display: inline-block;
+				vertical-align: middle;
+				border-radius: 5px;
+				height: 30px;
+				font-size: 20px;
+				padding: 2px 10px;
+				border: 3px solid rgba(159,182,205,1);
+			}
+		.btns{
+		}
+			#login_btn{
+				color: white;
+				display: inline-block;
+				border-radius: 5px;
+				margin-top: 15px;
+				margin-right: 20px;
+				width: 100px;
+				height: 30px;
+				font-size: 20px;
+				background-color: rgba(180,180,180,1);
+			}
+			#reg_btn{
+				color: white;
+				display: inline-block;
+				border-radius: 5px;
+				width: 100px;
+				height: 30px;
+				font-size: 20px;
+				background-color: rgba(180,180,180,1);
+			}
+
+#register_filter{
+	top : 0px;
+	left : 0px;
+	position : absolute;
+	height: 100%;
+	width : 100%;
+		background-color : rgba(200,200,200,0.3);
+}
+	#register_form{
+		position : relative;
+		width : 400px;
+		margin : 200px auto;
+		padding : 10px;
+				background-color: rgba(222, 222, 222,1);
+		border: 10px rgba(255, 255, 255,0.8) solid;
+		border-radius: 20px;
+	}
+		#register_form .row{
+			display: block;
+			margin-top : 5px;
+			margin-bottom: 5px;
+			padding-left: 10px;
+			font-size: 17px;
+			text-align: left;
+		}
+		#register_form .radio{
+			text-align: center;
+		}
+		#register_form .radio label{
+		 	margin-right: 20px;
+		 	margin-left: 20px;
+		}
+			#register_form .row span{
+				display: inline-block;
+				text-align: right;
+				margin-right: 15px;
+				width: 80px;
+			}
+			#register_form .row input{
+				height: 25px;
+				position : relative;
+				vertical-align: middle;
+				font-size : 15px;
+				border-radius: 6px;
+				padding: 0px 8px;
+			}
+		.notice{
+			float: right;
+			font-size: 12px;
+			margin-right: 20px;
+		}
+		#register_form button{
+			display: block;
+			margin: 5px auto;
+			font-size : 15px;
+			font-weight: bold;
+			color: white;
+			width: 250px;
+			height: 30px;
+			border-radius: 10px;
+		}
+			#number {
+				display: none;
+			}
+			#register_form button[type="submit"]{
+				background-color: rgba(180,180,180,1);
+				margin-top: 15px;
+			}
+			#register_form button[type="refresh"]{
+				background-color: rgba(180,180,180,1);
+			}
+
+ 
+.dis_show{
+	display: none;
+}
