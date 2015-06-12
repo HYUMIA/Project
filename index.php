@@ -35,6 +35,9 @@
 				<label><span>학번</span><input type="text" name="number" placeholder="학번" size="20"/></label>
 			</ui>
 			<ui class="row">
+				<label><span>학과 </span><input type="text" name="depart" placeholder="학과" size="20"/></label>
+			</ui>
+			<ui class="row">
 				<label><span>이름 </span><input type="text" name="name" placeholder="이름" size="20"/></label>
 			</ui>
 			<ui class="row">

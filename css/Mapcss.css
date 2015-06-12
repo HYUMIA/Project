@@ -1,0 +1,154 @@
+/*This is for Map.php*/
+@font-face{
+	font-family: "nanum";
+	src: url(./font/NanumBarunGothicBold.ttf);
+}
+* {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: gray;
+	font-family: "nanum";
+	font-weight: bold;
+}
+
+header {
+	height: 30px;
+}
+	#status {
+		background-color: #F0F0F0;
+		float: left;
+		height: 100%;
+		width: 100%;
+	}
+		#status ul {
+			display: inline-block;
+			list-style: none;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#snum {
+
+		}
+		#sname {
+
+		}
+		#sdepart {
+
+		}
+	#logout {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+		#logout img{
+			height: 30px;
+		}
+
+		#logout:hover{
+			cursor: pointer;
+			border: 1px solid black;
+
+		}
+
+
+article {
+	float: left;
+	height: 600px;
+	width: 1000px;
+	border: 2px black solid;
+	z-index: 1;
+	margin-left: 5px;
+
+}
+
+	#Map {
+		z-index: 10;
+	}
+
+	#EriMap{
+		width: 100%;
+	}
+
+	#G1 {
+		position: relative;
+		top: -375px;
+		left: 315px;
+		z-index: 100;
+		display: inline-block;
+	}
+
+	#G3 {
+		position: relative;
+		top: -385px;
+		left: 288px;
+		z-index: 100;
+		display: inline-block;
+	}
+
+	#G1 img:hover {
+		border: 1px solid black;
+	}
+
+	#G3 img:hover {
+		border: 1px solid black;
+	}
+aside {
+	background-color: #F0F0F0;
+	width: 250px;
+	max-height: 800px;
+	float: right;
+	text-align: center;
+	border-left: 2px dashed rgba(87,87,87,1);
+	border-right: 2px dashed rgba(87,87,87,1);
+	border-bottom: 2px dashed rgba(87,87,87,1);
+}
+
+	.title{
+		display: block;
+		border-bottom: 2px dashed rgba(87,87,87,1);
+		border-top: 2px double rgba(87,87,87,1);
+
+	}
+	#showroom {
+		height: 320px;
+		max-height: 320px;
+		overflow-y: auto;
+		margin-bottom: 5px;
+		padding-bottom: 5px;
+		border-bottom: 5px solid rgba(87,87,87,0.5);
+	}
+		.building_list {
+			border-bottom: 2px dashed rgba(87,87,87,1);
+		}	
+			.building {
+				margin: 5px;
+				border-bottom: 2px solid rgba(87,87,87,1);
+			}
+			.row {
+			}
+
+	#timeline {
+		height: 150px;
+		max-height: 150px;
+		overflow-y: auto;
+
+	}
+		#timeline > ul {
+			/*overflow-y: scroll;*/
+		}
+		#classroom{
+			display: block;
+			font-size: 12px;
+		}
+
+	#reservation {
+		display: inline-block;
+		padding: 3px 5px;
+		width: 150px;
+		border-radius: 10px;
+		border: 5px solid rgba(255,255,255,0.8);
+		cursor: pointer;
+	}
