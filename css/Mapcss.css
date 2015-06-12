@@ -120,15 +120,28 @@ aside {
 		padding-bottom: 5px;
 		border-bottom: 5px solid rgba(87,87,87,0.5);
 	}
-		.building_list {
-			border-bottom: 2px dashed rgba(87,87,87,1);
-		}	
-			.building {
-				margin: 5px;
-				border-bottom: 2px solid rgba(87,87,87,1);
-			}
-			.row {
-			}
+		#building {
+			font-size: 20px;
+		}
+		.floors {
+			margin: 5px;
+			border-bottom: 2px solid rgba(87,87,87,1);
+			cursor: pointer;
+		}
+			.room_list {
+				border-bottom: 2px dashed rgba(87,87,87,1);
+			}	
+				.room_list label {
+					display: block;
+				}
+					.room_list label input {
+						display: none;
+					}
+				.room {
+					margin: 3px 0px;
+					display: none;
+				}
+
 
 	#timeline {
 		height: 150px;
@@ -136,13 +149,16 @@ aside {
 		overflow-y: auto;
 
 	}
-		#timeline > ul {
-			/*overflow-y: scroll;*/
-		}
 		#classroom{
 			display: block;
 			font-size: 12px;
 		}
+		#timeline > ul {
+			/*overflow-y: scroll;*/
+		}
+			.time label input {
+				display: none;
+			}
 
 	#reservation {
 		display: inline-block;
@@ -152,3 +168,6 @@ aside {
 		border: 5px solid rgba(255,255,255,0.8);
 		cursor: pointer;
 	}
+.backgroundColor {
+	background-color: rgba(150,150,150,0.6);
+}

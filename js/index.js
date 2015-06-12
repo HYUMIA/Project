@@ -11,10 +11,9 @@ window.onload=function(){
 	});
 	// $("reg_btn").attachEvent("click",regBtnClick);
 	$("reg_btn").observe("click", regBtnClick);
-	$("reg_cancel")
+	$("reg_cancel").observer
 	$("student").observe("click", check_radio);
 	$("professor").observe("click", check_radio);
-	$("number").style.display = "none";
 }	
 function regBtnClick(event){
 	// ghost_ani($("register_filter"));
@@ -24,9 +23,9 @@ function regBtnClick(event){
 }
 function check_radio(evnet){
 	if(this.value == "student") {
-		 $("number").style.display = "block";
+		 $("identity").value = "student";
 	}
 	else {
-		$("number").style.display = "none";
+		$("identity").value = "professor";
 	}
 }

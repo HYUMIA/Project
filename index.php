@@ -31,14 +31,11 @@
 				<label><input type="radio" name="type" value="student" id="student" class="radioes">Student</label>
 				<label><input type="radio" name="type" value="professor" id="professor" class="radioes">Professor</label>
 			</ul>
-			<ui id="number" class="row">
-				<label><span>학번</span><input type="text" name="number" placeholder="학번" size="20"/></label>
+			<ui class="row">
+				<label><span>이름 </span><input type="text" name="name" placeholder="학번 기입" size="20"/></label>
 			</ui>
 			<ui class="row">
 				<label><span>학과 </span><input type="text" name="depart" placeholder="학과" size="20"/></label>
-			</ui>
-			<ui class="row">
-				<label><span>이름 </span><input type="text" name="name" placeholder="이름" size="20"/></label>
 			</ui>
 			<ui class="row">
 				<label><span>ID </span><input type="text" name="id" placeholder="ID" size="20"/></label>
@@ -46,9 +43,8 @@
 			<ul class="row">
 				<label><span>Password </span><input type="password" name="password" placeholder="비밀번호"/></label>
 			</ul>
-			<!-- <ul class="notice">
-				* : 필수입력
-			</ul> -->
+			<input id="identity" type="hidden" name="identity" value="" />
+
 			<button type="submit">Done</button>
 			<button id="reg_cancel" type="refresh">Cancel</button>
 		</form>
