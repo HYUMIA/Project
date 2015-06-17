@@ -79,8 +79,14 @@ body{
 	width : 100%;
 		background-color : rgba(200,200,200,0.3);
 }
+	#register{
+		width : 410px;
+		height : 280px;
+		margin : 250px auto;
+			background-color: rgba(222, 222, 222,0.9);
+		border-radius: 20px;
+	}
 	#register_form{
-		position : relative;
 		width : 400px;
 		margin : 200px auto;
 		padding : 10px;
@@ -139,7 +145,7 @@ body{
 				background-color: rgba(180,180,180,1);
 				margin-top: 15px;
 			}
-			#register_form button[type="refresh"]{
+			#register_form button[type="reset"]{
 				background-color: rgba(180,180,180,1);
 			}
 

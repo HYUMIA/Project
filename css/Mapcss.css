@@ -26,8 +26,7 @@ header {
 		#status ul {
 			display: inline-block;
 			list-style: none;
-			margin-left: auto;
-			margin-right: auto;
+			margin-left: 20px;
 		}
 		#snum {
 
@@ -36,21 +35,16 @@ header {
 
 		}
 		#sdepart {
-
+			
 		}
 	#logout {
 		position: absolute;
 		right: 0;
 		top: 0;
+		cursor: pointer;
 	}
 		#logout img{
 			height: 30px;
-		}
-
-		#logout:hover{
-			cursor: pointer;
-			border: 1px solid black;
-
 		}
 
 
@@ -58,12 +52,77 @@ article {
 	float: left;
 	height: 600px;
 	width: 1000px;
-	border: 2px black solid;
 	z-index: 1;
 	margin-left: 5px;
 
 }
 
+
+	#cancel_filter{
+	top : 0px;
+	left : 0px;
+	position : absolute;
+	height: 100%;
+	width : 100%;
+		background-color : rgba(200,200,200,0.8);	
+	z-index: 101;
+	}
+		#cancel{
+		width : 410px;
+		height : 280px;
+		margin : 200px auto;
+			background-color: rgba(222, 222, 222,0.9);
+		border-radius: 20px;
+		z-index: 102;
+		}
+		#cancel_form{
+			width : 390px;
+			height: 280px;
+			max-height: 280px;
+			overflow-y: auto;
+			/*margin : 200px auto;*/
+			padding : 10px;
+					background-color: rgba(222, 222, 222,1);
+			border: 10px rgba(255, 255, 255,0.8) solid;
+			border-radius: 20px;
+		z-index: 103;
+		}
+			#cancel_form table{
+				/*border: 1px solid black;*/
+				text-align: center;
+			}
+			#cancel_form table td {
+				border-bottom: 1px solid black;
+			}
+				.num {
+					width: 40px;
+				}
+				.building {
+					width: 70px;
+				}
+				.roomnum {
+					width: 50px;
+				}
+				.checkin {
+					width: 100px;
+				}
+				.checkout {
+					width: 100px;
+				}
+			#cancel_form input[type="submit"] {
+				border: 5px solid rgba(255,255,255,0.8);
+				padding: 2px 5px;
+				border-radius: 5px;
+				float: right;
+				margin-right: 10px;
+			}
+			#cancel_form button[type="refresh"] {
+				border: 5px solid rgba(255,255,255,0.8);
+				padding: 2px 5px;
+				border-radius: 5px;
+				float: right;
+				margin-right: 10px;
+			}
 	#Map {
 		z-index: 10;
 	}
@@ -74,44 +133,57 @@ article {
 
 	#G1 {
 		position: relative;
-		top: -375px;
+		top: -350px;
 		left: 315px;
 		z-index: 100;
 		display: inline-block;
 	}
+		#G1 input {
+			display: none;
+		}
+		#G1 img:hover {
+			cursor: pointer;
+			/*border: 1px solid black;*/
+			/*margin-bottom: 5px;*/
+		}
 
-	#G3 {
+	/*#G3 {
 		position: relative;
 		top: -385px;
 		left: 288px;
-		z-index: 100;
+		z-index: 101;
 		display: inline-block;
-	}
+	}*/
 
-	#G1 img:hover {
-		border: 1px solid black;
-	}
 
-	#G3 img:hover {
+	/*#G3 img:hover {
 		border: 1px solid black;
-	}
+	}*/
+
 aside {
 	background-color: #F0F0F0;
 	width: 250px;
 	max-height: 800px;
 	float: right;
 	text-align: center;
-	border-left: 2px dashed rgba(87,87,87,1);
-	border-right: 2px dashed rgba(87,87,87,1);
-	border-bottom: 2px dashed rgba(87,87,87,1);
+	border-left: 2px solid rgba(87,87,87,0.8);
+	border-bottom: 2px solid rgba(87,87,87,0.8);
 }
 
 	.title{
 		display: block;
 		border-bottom: 2px dashed rgba(87,87,87,1);
 		border-top: 2px double rgba(87,87,87,1);
-
+		vertical-align: middle;
 	}
+		#date{
+			text-align: left;
+			padding-left: 10px;
+			margin-bottom: 5px;
+		}
+			#date input {
+				border-radius: 5px;
+			}
 	#showroom {
 		height: 320px;
 		max-height: 320px;
@@ -139,7 +211,6 @@ aside {
 					}
 				.room {
 					margin: 3px 0px;
-					display: none;
 				}
 
 
@@ -153,6 +224,7 @@ aside {
 			display: block;
 			font-size: 12px;
 		}
+
 		#timeline > ul {
 			/*overflow-y: scroll;*/
 		}
@@ -160,7 +232,7 @@ aside {
 				display: none;
 			}
 
-	#reservation {
+	.button {
 		display: inline-block;
 		padding: 3px 5px;
 		width: 150px;
@@ -170,4 +242,7 @@ aside {
 	}
 .backgroundColor {
 	background-color: rgba(150,150,150,0.6);
+}
+.dis_show {
+	display: none;
 }
